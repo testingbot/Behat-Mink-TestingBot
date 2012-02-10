@@ -2,7 +2,7 @@ default:
     context:
         parameters:
             javascript_session: selenium
-            base_url: http://www.google.be
+            base_url: http://www.google.com
             browser: iexplore
             show_cmd: open %s
             selenium:
