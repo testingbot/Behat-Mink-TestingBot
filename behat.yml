@@ -1,0 +1,17 @@
+default:
+    context:
+        parameters:
+            javascript_session: selenium
+            base_url: http://www.google.be
+            browser: iexplore
+            show_cmd: open %s
+            selenium:
+              host: hub.testingbot.com
+              port: 4444
+              browser: >
+                {
+                  "client_key" : "[KEY]",
+                  "client_secret" : "[SECRET]",
+                  "browserName" : "iexplore",
+                  "version" : 8
+                }
