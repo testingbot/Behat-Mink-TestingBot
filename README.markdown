@@ -16,6 +16,7 @@ Installation
 Make sure you have PEAR installed. You need PEAR to install Behat and its dependencies.
 
 	$ git clone https://github.com/testingbot/Behat-Mink-TestingBot.git
+	$ cd Behat-Mink-TestingBot
 	$ curl http://getcomposer.org/installer | php
 	$ php composer.phar install
 	
