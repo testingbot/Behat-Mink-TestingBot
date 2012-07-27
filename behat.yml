@@ -5,4 +5,4 @@ default:
       goutte:    ~
       selenium2:
         wd_host: key:secret@hub.testingbot.com/wd/hub
-        capabilities: { "name" : "behat/mink demo", "platform": "WINDOWS", "browserName": "firefox", "browserVersion": "14", "version": "14" }
+        capabilities: { "platform": "WINDOWS", "browserName": "firefox", "browserVersion": "14", "version": "14" }
