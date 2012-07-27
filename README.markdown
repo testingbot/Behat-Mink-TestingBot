@@ -13,21 +13,21 @@ Mink is used for its browser emulation and works nicely together with Behat.
 Installation
 -------------
 
- Make sure you have PEAR installed. You need PEAR to install Behat and its dependencies.
+Make sure you have PEAR installed. You need PEAR to install Behat and its dependencies.
 
 	$ git clone https://github.com/testingbot/Behat-Mink-TestingBot.git
 	$ curl http://getcomposer.org/installer | php
 	$ php composer.phar install
 	
-	In order to use our TestingBot.com grid, you need to add your api key and secret to behat.yml:
-	Replace the "wd_host" string with your key and secret.
+In order to use our TestingBot.com grid, you need to add your api key and secret to behat.yml:
+Replace the "wd_host" string with your key and secret.
 
 Running this demo
 --------------------------
 
 Execute the following command in the directory of this git project:
 
-  $ bin/behat
+	$ bin/behat
   
 You should see the test result:
 
