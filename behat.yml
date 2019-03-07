@@ -1,8 +1,9 @@
 default:
-  extensions:
-    Behat\MinkExtension\Extension:
-      base_url:  'https://www.google.com/webhp?complete=0&'
-      goutte:    ~
-      selenium2:
-        wd_host: key:secret@hub.testingbot.com/wd/hub
-        capabilities: { "platform": "WINDOWS", "browserName": "firefox", "browserVersion": "14", "version": "14" }
+    extensions:
+        Behat\MinkExtension:
+            sessions:
+                my_session:                
+                    selenium2: 
+                        wd_host: "https://hub.testingbot.com/wd/hub"
+                        capabilities: {"browserName" :"Chrome", "platform": "WIN10", "version": "latest", "extra_capabilities": {"key": "key", "secret": "secret"}}
+

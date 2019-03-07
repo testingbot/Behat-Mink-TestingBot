@@ -1,15 +1,6 @@
- Feature: googleSearch
-  In order to search information on google
-  As a user
-  I want to get sensible results from site
+Feature: Google Search Functionality
 
- @javascript
-  Scenario Outline: Search Keywords on Google
-    Given I am on "/"
-    And I fill in searchBox with "<input>"
-    When I press submit button
-    Then I should see "<output>" 
-
-    Examples:
-      | input           | output          |                                   
-      | TestingBot      | Selenium        |
+  Scenario: Can find search results
+    Given I am on "https://www.google.com/ncr"
+    When I search for "Google"
+    Then I should see "Google"
